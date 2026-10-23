@@ -1,0 +1,20 @@
+{
+  "project": "TODO: project name",
+  "rules": "Only change 'passes' and 'notes'. Flip 'passes' to true only after the check passes. Never delete or reword features.",
+  "features": [
+    {
+      "id": "F-001",
+      "title": "TODO: one small, testable feature",
+      "check": "TODO: the command that proves it works, e.g. pytest tests/test_import.py",
+      "passes": false,
+      "notes": ""
+    },
+    {
+      "id": "F-002",
+      "title": "TODO: the next feature",
+      "check": "TODO: its proof command",
+      "passes": false,
+      "notes": ""
+    }
+  ]
+}

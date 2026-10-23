@@ -1,0 +1,27 @@
+{
+  "project": "churn-pipeline",
+  "rules": "Only change 'passes' and 'notes'. Flip 'passes' to true only after the check passes. Never delete or reword features.",
+  "features": [
+    {
+      "id": "F-001",
+      "title": "Validate raw CSV schema and reject rows with null customer_id",
+      "check": "pytest tests/test_validate.py",
+      "passes": false,
+      "notes": ""
+    },
+    {
+      "id": "F-002",
+      "title": "Create a train/eval split by customer_id with no overlap",
+      "check": "pytest tests/test_split.py",
+      "passes": false,
+      "notes": ""
+    },
+    {
+      "id": "F-003",
+      "title": "Baseline logistic regression with a fixed seed, metrics written to reports/metrics.json",
+      "check": "python -m src.train --sample 500 --seed 0",
+      "passes": false,
+      "notes": ""
+    }
+  ]
+}
